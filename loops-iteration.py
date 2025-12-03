@@ -65,3 +65,17 @@ trouver_prix()
 # Fin du programme
 
 
+
+
+all_students = [ ["David", "Justine", "Valentin", "Axel", "Redouane"], 
+                 ["Julie", "Stéphane", "Mostapha", "Claudiu", "Son"], ]
+print(all_students[1][2])
+
+for students in all_students:
+    for student in students:
+        print(student + " est un ancien élève.")
+
+        if student in all_students[0]:
+            print(student + " est-il un langage backend ?")
+        else:
+            print(student + " est-il un langage frontend ?")
